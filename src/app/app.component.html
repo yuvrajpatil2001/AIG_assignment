@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<div class="container-fluid mainBG">
 <nav class="navbar navbar-expand-md navbar-light fixed-top bg-green">
     <span class="navbar-brand"><img src="../../assets/images/logo.png"></span>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -8,6 +8,20 @@
             <ul class="navbar-nav mr-auto">
               <li class="nav-item active">
                 <a class="nav-link" href="#">Dashboard <span class="sr-only">(current)</span></a>
+                <ul class="subNavbar-nav">
+                        <li class="sub-nav-item">
+                          <a class="sub-nav-link" href="#">Dashboard <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="sub-nav-item active">
+                          <a class="sub-nav-link" href="#">Business Overview</a>
+                        </li>
+                        <li class="sub-nav-item">
+                          <a class="sub-nav-link" href="#">Schedule</a>
+                        </li>
+                        <li class="sub-nav-item">
+                          <a class="sub-nav-link" href="#">Reports</a>
+                         </li>
+                      </ul>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Sign In</a>
@@ -28,23 +42,54 @@
                     <a class="nav-link" href="#">Retail</a>
                 </li>
             </ul>
+                    
           </div>
-          <!--<div class="subMenu">
-                <ul class="navbar-nav">
-                        <li class="sub-nav-item active">
-                          <a class="sub-nav-link" href="#">Dashboard <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="sub-nav-item">
-                          <a class="sub-nav-link" href="#">Business Overview</a>
-                        </li>
-                        <li class="sub-nav-item">
-                          <a class="sub-nav-link" href="#">Schedule</a>
-                        </li>
-                        <li class="sub-nav-item">
-                          <a class="sub-nav-link" href="#">Reports</a>
-                         </li>
-                      </ul>
-          </div>-->
 </nav>
+<div class="container contentWrapper">
+    <div class="row">
+        <div class="col-sm-2">button here</div>
+        <div class="col-sm-10"> 
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="artifactTile">
+                        <div class="chartWrapper">
+                            <h5 class="title">Yoga Classes
+                                    <i class="fas fa-pencil"></i>
+                            </h5>
+                            <div class="salesTitle">Sales by month</div>
+                        </div>
+                        <div class="salesWrapper">
+                            <div class="row">
+                                <div class="col lineHeight"><span class="salesLabel">Total Monthly Sales</span></div>
+                                <div class="col">
+                                    <div class="salesLabel">Current</div>
+                                    <div class="salesValue">25483</div>
+                                </div>
+                                <div class="col">
+                                    <div class="salesLabel">1- Year</div>
+                                    <div class="salesValue">map here</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="listWrapper">
+                            <div class="row">
+                                <div class="col"><span class="salesLabel">Price Name</span></div>
+                                <div class="col"><span class="salesLabel">Current</span></div>
+                                <div class="col"><span class="salesLabel">1- year</span></div>
+                            </div>
+                            <div class="row">
+                                    <div class="col"><span class="salesValue">Monthly Unlimited</span></div>
+                                    <div class="col"><span class="salesLabel">4260</span></div>
+                                    <div class="col"></div>
+                                </div>
+                            <span class="salesLabel">More</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">2</div>
+                <div class="col-sm-4">3</div>
+            </div>
+        </div>
+    </div>
 </div>
-<div class="container"></div>
+</div>
