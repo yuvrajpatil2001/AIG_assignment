@@ -129,8 +129,30 @@
 }
 
 
+
 .listWrapper{
     padding: 0px 20px;
+}
+.tblLabelLarge{
+    color:#92927C;
+    font-size:14px;
+}
+.tblLabelSmall{
+    color:#92927C;
+    font-size:11px;
+}
+.tblValueLabel{
+    color:#4D4D42;
+    font-size:14px;
+    font-weight: 600;
+    margin-bottom:10px;
+}
+
+.tblContent{
+    margin-top:35px;
+}
+.headerRow{
+    border-bottom: 1px solid #d0d0c9;
 }
 
 
