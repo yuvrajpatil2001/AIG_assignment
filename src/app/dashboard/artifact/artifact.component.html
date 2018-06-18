@@ -9,7 +9,9 @@
             <div>
                 <div class="row">
                     <div class="col">
-                        <div></div>
+                        <div>
+                                <img src="../../../assets/images/barChart.jpg"> 
+                        </div>
                     </div>
                 </div>
             </div>
@@ -34,10 +36,10 @@
                 <div class="col"><span class="salesLabel">Current</span></div>
                 <div class="col"><span class="salesLabel">1- year</span></div>
             </div>
-            <div class="row" *ngFor="let stats of statResult">
+            <div class="row" *ngFor="let stats of statResult let i =index">
                     <div class="col pricelabel">{{stats.Name}}</div>
                     <div class="col salesLabel">{{stats.Sales | currency}}</div>
-                    <div class="col"></div>
+                    <div class="col"> <img src="../../../assets/images/LineChart.jpg"></div>
             </div>
         </div>
             <span class="salesLabel" (click)="showId = !showId">{{showId ? 'Less' : 'More'}}</span>
