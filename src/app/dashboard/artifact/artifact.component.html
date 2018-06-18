@@ -21,7 +21,7 @@
                 <div class="col lineHeight"><span class="salesLabel">Total Monthly Sales</span></div>
                 <div class="col">
                     <div class="salesLabel">Current</div>
-                    <div class="salesValue">{{category.TotalMonthlySales | currency}}</div>
+                    <div class="salesValue">{{category.TotalMonthlySales | currency:'USD':true:'1.0-0'}}</div>
                 </div>
                 <div class="col">
                     <div class="salesLabel">1- Year</div>
@@ -38,7 +38,7 @@
             </div>
             <div class="row" *ngFor="let stats of statResult">
                     <div class="col pricelabel">{{stats.Name}}</div>
-                    <div class="col salesLabel">{{stats.Sales | currency}}</div>
+                    <div class="col salesLabel">{{stats.Sales | currency:'USD':true:'1.0-0' }}</div>
                     <div class="col"> <img src="../../../assets/images/LineChart.jpg"></div>
             </div>
         </div>
