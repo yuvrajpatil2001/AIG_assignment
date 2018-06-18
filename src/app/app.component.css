@@ -11,6 +11,7 @@
     background: #ECF7F2;
     height: 67px;
     border-bottom: 1px solid #CBE3D7;
+    padding-right: 0px;
 }
 .navbar-collapse{
     border-top:1px solid #d4e2e6;
@@ -97,6 +98,15 @@
     color:#4D4D42;
     font-size:19px;
 }
+.fa-pencil{
+    float:right;
+    color: #BABAB8;
+    cursor: pointer;
+    font-size: 17px;
+}
+.fa-pencil:hover{
+    color: #000;
+}
 
 
 .salesWrapper{
@@ -154,6 +164,22 @@
 .headerRow{
     border-bottom: 1px solid #d0d0c9;
 }
+
+/* Button here */
+.newProgram {
+    width: 75px;
+    height: 68px;
+    background: linear-gradient(#bcd89e, #9AC084);
+    border: 1px solid #7E9E6C;
+}
+.newProgram:hover,  .newProgram:focus, .newProgram:active{
+    background: linear-gradient(#9AC084, #bcd89e) !important;
+    border: 1px solid #7E9E6C !important;
+}
+.newProgram i {
+    font-size: 38px;
+}
+
 
 
 
