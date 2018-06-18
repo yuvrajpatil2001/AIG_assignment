@@ -1,121 +1,13 @@
 <div class="container-fluid mainBG">
-<nav class="navbar navbar-expand-md navbar-light fixed-top bg-green">
-    <span class="navbar-brand"><img src="../../assets/images/logo.png"></span>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Dashboard <span class="sr-only">(current)</span></a>
-                <ul class="subNavbar-nav">
-                        <li class="sub-nav-item">
-                          <a class="sub-nav-link" href="#">Dashboard <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="sub-nav-item active">
-                          <a class="sub-nav-link" href="#">Business Overview</a>
-                        </li>
-                        <li class="sub-nav-item">
-                          <a class="sub-nav-link" href="#">Schedule</a>
-                        </li>
-                        <li class="sub-nav-item">
-                          <a class="sub-nav-link" href="#">Reports</a>
-                         </li>
-                      </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Sign In</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Classes</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Workshops</a>
-               </li>
-               <li class="nav-item">
-                    <a class="nav-link" href="#">Appointments</a>
-               </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Client Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Retail</a>
-                </li>
-            </ul>
-                    
-          </div>
-</nav>
+<app-header></app-header>
 <div class="container contentWrapper">
     <div class="row">
         <div class="col-sm-2">
-                <button type="button" class="btn btn-primary newProgram">
-                    <i class="fa fa-plus"></i>
-                </button>
-                <div class="salesValue">New Program</div>
+            <new-program></new-program>
         </div>
         <div class="col-sm-10"> 
-            <div class="row">
-                <div class="col-sm-4">
-                    <div class="artifactTile">
-                        <div class="chartWrapper">
-                            <h5 class="title">Yoga Classes
-                                    <i class="fa fa-pencil"></i>
-                            </h5>
-                            <div class="salesTitle">Sales by month</div>
-                        </div>
-                        <div class="salesWrapper">
-                            <div class="row">
-                                <div class="col lineHeight"><span class="salesLabel">Total Monthly Sales</span></div>
-                                <div class="col">
-                                    <div class="salesLabel">Current</div>
-                                    <div class="salesValue">25483</div>
-                                </div>
-                                <div class="col">
-                                    <div class="salesLabel">1- Year</div>
-                                    <div class="salesValue">map here</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="listWrapper">
-                            <div class="row">
-                                <div class="col"><span class="salesLabel">Price Name</span></div>
-                                <div class="col"><span class="salesLabel">Current</span></div>
-                                <div class="col"><span class="salesLabel">1- year</span></div>
-                            </div>
-                            <div class="row">
-                                    <div class="col pricelabel">Monthly Unlimited</div>
-                                    <div class="col salesLabel">4260</div>
-                                    <div class="col"></div>
-                            </div>
-                            <div class="row">
-                                    <div class="col pricelabel">Monthly Unlimited</div>
-                                    <div class="col salesLabel">4260</div>
-                                    <div class="col"></div>
-                            </div>
-                            <span class="salesLabel">More</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4">2</div>
-                <div class="col-sm-4">3</div>
-            </div>
-            <div class="tblContent">
-                    <div class="row headerRow">
-                            <div class="col-lg-2 col-5 tblLabelLarge">All Programs</div>
-                            <div class="col-lg-2 col-4 tblLabelSmall">Monthely Sales</div>
-                            <div class="col-lg-8 col-3 tblLabelSmall">Monthely Attendence</div>
-                        </div>
-                        <div class="row tblValueLabel">
-                                <div class="col-lg-2 col-5">Monthly Unlimited</div>
-                                <div class="col-lg-2 col-4">4260</div>
-                                <div class="col-lg-7 col-3">276 <small>visits</small></div>
-                        </div>
-                        <div class="row tblValueLabel">
-                                <div class="col-lg-2 col-5">Monthly Unlimited</div>
-                                <div class="col-lg-2 col-4">4260</div>
-                                <div class="col-lg-7 col-3">276 <small>visits</small></div>
-                        </div>
-            </div>
+            <app-artifact></app-artifact>
+            <app-stats></app-stats>
         </div>
     </div>
 </div>
