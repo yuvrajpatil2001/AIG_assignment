@@ -1,3 +1,42 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 @import "~bootstrap/dist/css/bootstrap-reboot.css";
 @import "~font-awesome/css/font-awesome.css";
+
+@media (max-width: 576px) {
+    .bg-green{
+        padding-right:20px !important; 
+    }
+    .mainBG {
+        margin-top:65px !important;
+    }
+    .subNavbar-nav{
+        display: none;
+    }
+    .navbar-collapse{
+        margin-top:0px !important;
+    }
+ }
+ @media (max-width: 991.98px) {
+    .subNavbar-nav{
+        display: none;
+    }
+    .navbar-collapse{
+        margin-top:0px !important;
+    }
+    .navbar-collapse{
+        margin-left:0px !important;
+    }
+    .nav-item{
+        margin:5px 0px !important;
+        font-weight:normal !important;
+        font-size: 12px !important;
+        letter-spacing: 0px !important;
+        margin:0px !important;
+    }
+    .navbar-light .navbar-nav .nav-link{
+        padding:1px 10px !important;
+    }
+    .nav-item.active, .nav-item:hover{
+        padding:5px 0px !important;
+    }
+  }
