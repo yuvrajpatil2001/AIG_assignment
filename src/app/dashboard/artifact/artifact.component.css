@@ -5,6 +5,7 @@
     background: #fff;
     border: 1px solid #C8C8B6;
     border-radius: 5px;
+    margin-bottom:20px;
 }
 
 .chartWrapper{
@@ -36,6 +37,7 @@
 .salesLabel{
     color:#A7A79A;
     font-size: 10px;
+    cursor: pointer;
 }
 .lineHeight{
     line-height: 16px;
@@ -52,3 +54,17 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
+.listWrapper{
+    padding: 0px 20px;
+}
+
+/* .prevYear{
+    background: #CCBCDD;
+}
+.currentYear{
+    background: #B6D8B9;
+    height:50%;
+}
+.chartContainer{
+    height:150px;
+} */
