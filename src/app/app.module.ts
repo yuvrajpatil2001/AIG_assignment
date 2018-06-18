@@ -11,10 +11,6 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { RouterModule } from '@angular/router';
 import { ProgramService } from './program.service';
 import { HttpClientModule } from '@angular/common/http';
-import { FusionChartsModule } from 'angular4-fusioncharts';
-
-
-
 
 
 @NgModule({
@@ -32,7 +28,6 @@ import { FusionChartsModule } from 'angular4-fusioncharts';
     MainRoutingModule,
     RouterModule.forRoot([]),
     HttpClientModule,
-    FusionChartsModule
   ],
   providers: [ProgramService],
   bootstrap: [AppComponent]

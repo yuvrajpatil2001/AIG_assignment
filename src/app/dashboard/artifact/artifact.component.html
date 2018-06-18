@@ -1,5 +1,5 @@
 <div class="row">
-<div class="col-lg-4 col-sm-6" *ngFor="let category of artifactsResult">
+<div class="col-lg-4 col-sm-6" *ngFor="let category of artifactsResult; let i=index;">
     <div class="artifactTile">
         <div class="chartWrapper">
             <h5 class="title">{{category.Name}}
@@ -30,7 +30,7 @@
             </div>
         </div>
         <div class="listWrapper">
-            <div *ngIf="showId">
+            <div *ngIf="category.status">
             <div class="row">
                 <div class="col"><span class="salesLabel">Price Name</span></div>
                 <div class="col"><span class="salesLabel">Current</span></div>
@@ -42,7 +42,7 @@
                     <div class="col"> <img src="../../../assets/images/LineChart.jpg"></div>
             </div>
         </div>
-            <span class="salesLabel" (click)="showId = !showId">{{showId ? 'Less' : 'More'}}</span>
+            <span class="salesLabel" (click)="category.status = !category.status">{{category.status ? 'Less' : 'More'}}</span>
         </div>
     </div>
 </div>
