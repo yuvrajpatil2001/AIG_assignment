@@ -21,14 +21,12 @@ export class ArtifactComponent implements OnInit {
   public loadArtifacts() {
     this.artifacts.getPrograms().subscribe((res: any) => {
       this.artifactsResult = res;
-      console.log(this.artifactsResult);
     });
   }
 
   public loadStats() {
     this.artifacts.getStats().subscribe((res: any) => {
       this.statResult = res;
-      console.log(this.statResult);
     });
   }
 

@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { Observable} from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 
+
 @Injectable({
   providedIn: 'root'
 })
@@ -12,6 +13,7 @@ private statUrl = 'https://api.myjson.com/bins/47axv';
   constructor(private http: HttpClient) { 
     this.getPrograms();
   }
+
   public getPrograms() {
     return this.http.get(this.configUrl);
   }
